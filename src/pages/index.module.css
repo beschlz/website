@@ -1,0 +1,10 @@
+:root {
+    --main-color: #0E1D33;
+    --translucent-main-color: rgba(0, 0, 0, 0.49);
+    --secondary-color: #BC4807;
+    background-color: var(--main-color);
+}
+
+.page {
+
+}
