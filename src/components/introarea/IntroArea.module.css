@@ -1,0 +1,31 @@
+
+.introSection {
+    margin-left: var(--left-page-margin);
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+p {
+    display: inline-block;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.label {
+    width: 80px;
+}
+
+.link {
+    padding-left: 32px;
+}
+
+.linkBlock {
+    display: block;
+}

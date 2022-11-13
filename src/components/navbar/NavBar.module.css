@@ -1,0 +1,23 @@
+.navbar {
+    width: 100%;
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+    padding-top: 32px;
+    padding-left: 48px;
+}
+
+li {
+    font-family: 'FragmentMono', monospace;
+    font-size: 20px;
+    display: inline;
+    margin-right: 32px;
+}
+
+.flag {
+    display: inline;
+    float: inline-end;
+    margin-right: 40px;
+}
