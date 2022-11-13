@@ -1,6 +1,7 @@
 
 .introSection {
     margin-left: var(--left-page-margin);
+    display: inline-block;
 }
 
 h1 {

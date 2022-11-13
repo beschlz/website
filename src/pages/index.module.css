@@ -6,6 +6,7 @@
     --left-page-margin: 48px;
     color: var(--font-color);
     background-color: var(--main-color);
+    margin: 0px;
 }
 
 h1 {
@@ -35,5 +36,10 @@ p {
 }
 
 .introsection {
-    margin-top: 220px;
+    margin-top: 160px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0px;
 }
