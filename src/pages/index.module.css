@@ -9,6 +9,11 @@
     margin: 0px;
 }
 
+body {
+    width: 100%;
+    margin: 0px;
+}
+
 h1 {
     font-family: 'FragmentMono', monospace;
     font-size: 48px;
