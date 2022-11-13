@@ -11,7 +11,11 @@ const PersonalInfoCard: React.FC = () => {
                     <img className={styles.img} src={ProfilePic} />
                 </div>
                 <div className={styles.rightColum}>
-
+                    <p className={styles.titleText}>Hey!</p>
+                    <p className={styles.descriptionText}>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                        et justo duo dolores et ea rebum.</p>
                 </div>
             </div>
         </div>
