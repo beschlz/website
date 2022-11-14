@@ -4,6 +4,26 @@ import * as styles from './index.module.css';
 import NavBar from "../components/navbar/NavBar";
 import IntroArea from "../components/introarea/IntroArea";
 import PersonalInfoCard from "../components/personalinfocard/PersonalInfoCard";
+import Station from "../components/station/Station";
+
+const mockedStations = [{
+  year: 2022,
+  text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+
+  Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua`
+},
+{
+  year: 2021,
+  text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+
+  Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua`
+
+}
+];
 
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -17,7 +37,12 @@ const IndexPage: React.FC<PageProps> = () => {
             <PersonalInfoCard />
           </div>
         </div>
-
+      </section>
+      <section className={styles.stationenSection}>
+        <h2>Stationen</h2>
+        {
+          mockedStations.map(stat => <Station key={`stat_key_${stat.year}`} year={stat.year} text={stat.text} />)
+        }
       </section>
     </main>
   )

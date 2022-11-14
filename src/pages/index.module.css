@@ -64,6 +64,14 @@ p {
     margin-right: 0px;
 }
 
+.stationenSection {
+    display: flex;
+    flex-direction: column;
+    max-width: 780px;
+    margin-top: 140px;
+    margin-left: var(--left-page-margin);
+}
+
 .card {
     display: flex;
     align-items: flex-end;
