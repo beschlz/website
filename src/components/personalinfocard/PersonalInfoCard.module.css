@@ -4,7 +4,7 @@
     color: var(--translucent-main-color);
     display: inline-block;
     padding-left: 40px;
-    width: 720px;
+    max-width: 720px;
     padding-top: 24px;
     padding-bottom: 32px;
     margin-right: 0px;
@@ -64,6 +64,7 @@
 @media only screen and (max-width: 800px) {
     .infocard {
         border-radius: 32px 0px 0px 32px;
+        max-width: 600px;
     }
 
     .img {

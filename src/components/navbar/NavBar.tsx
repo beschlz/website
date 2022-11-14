@@ -23,9 +23,6 @@ const NavBar: React.FC = () => {
                 <li>
                     Impressum
                 </li>
-                <div className={styles.flag}>
-                    <LanuageSwitcher />
-                </div>
             </ul>
         </div >
     );
