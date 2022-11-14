@@ -12,7 +12,10 @@ const IndexPage: React.FC<PageProps> = () => {
       <NavBar />
       <section className={styles.introsection}>
         <IntroArea />
-        <PersonalInfoCard />
+        <div className={styles.card}>
+          <PersonalInfoCard />
+        </div>
+
       </section>
     </main>
   )

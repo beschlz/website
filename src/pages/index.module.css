@@ -48,3 +48,16 @@ p {
     justify-content: space-between; 
     margin-right: 0px;
 }
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;    
+}
+
+@media only screen and (max-width: 1250px){
+    .card {
+        margin-top: 32px;
+        width: 100%;
+    }
+}
