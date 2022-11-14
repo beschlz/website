@@ -66,13 +66,24 @@ p {
 
 .card {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;    
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: flex-end; 
 }
 
 @media only screen and (max-width: 1250px){
     .card {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
         margin-top: 32px;
         width: 100%;
+    }
+
+    .subcard {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 90%;
     }
 }

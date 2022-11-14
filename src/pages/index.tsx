@@ -13,7 +13,9 @@ const IndexPage: React.FC<PageProps> = () => {
       <section className={styles.introsection}>
         <IntroArea />
         <div className={styles.card}>
-          <PersonalInfoCard />
+          <div className={styles.subcard}>
+            <PersonalInfoCard />
+          </div>
         </div>
 
       </section>
