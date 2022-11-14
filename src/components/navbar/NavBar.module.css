@@ -22,3 +22,11 @@ li {
     float: inline-end;
     margin-right: 40px;
 }
+
+
+@media only screen and (max-width: 720px) {
+
+    .disableWhenSmall {
+        display: none;
+    }
+}

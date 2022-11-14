@@ -11,13 +11,13 @@ const NavBar: React.FC = () => {
                 <li>
                     Über mich
                 </li>
-                <li>
+                <li className={styles.disableWhenSmall}>
                     Stationen
                 </li>
-                <li>
+                <li className={styles.disableWhenSmall}>
                     Skills
                 </li>
-                <li>
+                <li className={styles.disableWhenSmall}>
                     Impressum
                 </li>
                 <div className={styles.flag}>
