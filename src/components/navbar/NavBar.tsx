@@ -1,22 +1,26 @@
 import React from "react";
-import * as styles from './NavBar.module.css';
-
+import Hamburger from 'hamburger-react'
 import LanuageSwitcher from "../languageswitcher/LanguageSwitcher";
+
+import * as styles from './NavBar.module.css';
 
 const NavBar: React.FC = () => {
     return (
         <div className={styles.navbar}>
-            <ul>
+            <div className={styles.enableWhenSmall}>
+                <Hamburger />
+            </div>
+            <ul className={styles.disableWhenSmall}>
                 <li>
                     Über mich
                 </li>
-                <li className={styles.disableWhenSmall}>
+                <li >
                     Stationen
                 </li>
-                <li className={styles.disableWhenSmall}>
+                <li>
                     Skills
                 </li>
-                <li className={styles.disableWhenSmall}>
+                <li>
                     Impressum
                 </li>
                 <div className={styles.flag}>

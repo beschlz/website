@@ -61,7 +61,7 @@
     margin-left: 16px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .infocard {
         border-radius: 32px 0px 0px 32px;
     }

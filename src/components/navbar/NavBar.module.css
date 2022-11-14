@@ -24,10 +24,18 @@ li {
     margin-right: 32px;
 }
 
+.enableWhenSmall {
+    display: none;
+}
+
 
 @media only screen and (max-width: 720px) {
 
     .disableWhenSmall {
         display: none;
+    }
+
+    .enableWhenSmall {
+        display: block;
     }
 }
