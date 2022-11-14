@@ -1,7 +1,6 @@
 import React from "react";
 import * as styles from './NavBar.module.css';
 
-import GermanFlag from '../../images/German_Flag_Icon.svg';
 import LanuageSwitcher from "../languageswitcher/LanguageSwitcher";
 
 const NavBar: React.FC = () => {
