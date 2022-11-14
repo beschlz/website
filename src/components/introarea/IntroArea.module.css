@@ -2,10 +2,12 @@
 .introSection {
     margin-left: var(--left-page-margin);
     display: inline-block;
+    align-self: flex-start;
 }
 
 h1 {
     margin: 0;
+    font-size: 40px;
 }
 
 h2 {

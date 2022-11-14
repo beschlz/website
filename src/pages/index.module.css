@@ -3,7 +3,7 @@
     --translucent-main-color: rgba(0, 0, 0, 0.49);
     --secondary-color: #BC4807;
     --font-color: #FFFFFF;
-    --left-page-margin: 48px;
+    --left-page-margin: 60px;
     color: var(--font-color);
     background-color: var(--main-color);
     margin: 0px;
@@ -44,7 +44,7 @@ p {
     margin-top: 160px;
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between; 
     margin-right: 0px;
 }
