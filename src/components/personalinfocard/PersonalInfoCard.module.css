@@ -8,6 +8,7 @@
     padding-top: 24px;
     padding-bottom: 32px;
     margin-right: 0px;
+    padding-left: 0px;
     align-self: flex-end;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -57,13 +58,15 @@
     height: 220px;
     object-fit: cover;
     border-radius: 140px;
+    margin-left: 16px;
 }
 
 @media only screen and (max-width: 600px) {
     .img {
-        width: 50px;
-        height: 50px;
+        width: 90px;
+        height: 90px;
         align-self: center;
+        margin-left: 8px;
     }
 
     .leftColumn {
@@ -75,7 +78,7 @@
     }
       
     .gridWrapper {
-        grid-template-columns: 15% 85%;
+        grid-template-columns: 30% 70%;
         height: fit-content;
     }
 
@@ -89,10 +92,10 @@
     }
 
     .titleText {
-        font-size: 14px;
+        font-size: 10px;
     }
     
     .descriptionText {
-        font-size: 14px;
+        font-size: 10px;
     }
 }
