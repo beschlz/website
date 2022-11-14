@@ -6,7 +6,6 @@
     padding-left: 40px;
     width: 720px;
     height: 300px;
-    min-width: 720px;
     margin-right: 0px;
     align-self: flex-end;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -17,14 +16,13 @@
     width: 100%;
     grid-template-columns: 35% 65%;
     height: 100%;
-    padding-top: 14px;
 }
 
 .leftColumn {
     display: flex;
+    height: 100%;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 32px;
+    justify-content: center;  
 }
 
 .rightColum {
@@ -58,4 +56,43 @@
     height: 220px;
     object-fit: cover;
     border-radius: 140px;
+}
+
+@media only screen and (max-width: 600px) {
+    .img {
+        width: 50px;
+        height: 50px;
+        align-self: center;
+    }
+
+    .leftColumn {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: flex-start;
+        margin-left: 16px;
+    }
+      
+    .gridWrapper {
+        grid-template-columns: 15% 85%;
+        height: fit-content;
+    }
+
+    .rightColum {
+        padding-right: 16px;
+        margin-top: 16px;
+    }
+    
+    .infocard {
+        width:  480px;
+        height: 200px;
+    }
+
+    .titleText {
+        font-size: 14px;
+    }
+    
+    .descriptionText {
+        font-size: 14px;
+    }
 }
