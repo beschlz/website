@@ -7,12 +7,13 @@
 
 h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: var(--name-font-size);
 }
 
 h2 {
     margin: 0;
     margin-bottom: 32px;
+    font-size: var(--header-font-size);
 }
 
 p {
@@ -26,7 +27,13 @@ p {
 }
 
 .link {
-    padding-left: 32px;
+    padding-left: 36px;
+}
+
+@media only screen and (max-width: 800px) {
+    .link {
+        padding-left: 4px;
+    }
 }
 
 .linkBlock {

@@ -4,9 +4,24 @@
     --secondary-color: #BC4807;
     --font-color: #FFFFFF;
     --left-page-margin: 60px;
+    --name-font-size: 40px;
+    --header-font-size: 32px;
     color: var(--font-color);
     background-color: var(--main-color);
     margin: 0px;
+}
+
+@media only screen and (max-width: 800px) {
+    :root {
+        --left-page-margin: 32px;
+        --name-font-size: 32px;
+        --header-font-size: 28px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
 }
 
 body {
