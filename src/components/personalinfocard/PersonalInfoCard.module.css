@@ -1,5 +1,5 @@
 .infocard {
-    border-radius: 75px 0px 0px 75px;
+    border-radius: 40px;
     background-color: var(--translucent-main-color);
     color: var(--translucent-main-color);
     display: inline-block;
@@ -7,7 +7,7 @@
     max-width: 720px;
     padding-top: 24px;
     padding-bottom: 32px;
-    margin-right: 0px;
+    margin-right: 16px;
     padding-left: 0px;
     align-self: flex-end;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -63,7 +63,6 @@
 
 @media only screen and (max-width: 800px) {
     .infocard {
-        border-radius: 32px 0px 0px 32px;
         max-width: 600px;
     }
 
