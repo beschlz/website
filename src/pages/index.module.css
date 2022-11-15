@@ -84,6 +84,13 @@ p {
     justify-content: flex-end; 
 }
 
+.skillcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 @media only screen and (max-width: 1250px){
     .card {
         display: flex;
