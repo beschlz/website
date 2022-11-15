@@ -10,7 +10,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skillName }) => {
     const [aktive, setAktive] = useState(false);
 
     return (
-        <div className={`${aktive ? styles.skillcardAktive : styles.skillcardUnaktive}`} onClick={() => setAktive(!aktive)}>
+        <div className={`${styles.skillcard} ${aktive ? styles.skillcardAktive : styles.skillcardUnaktive}`} onClick={() => setAktive(!aktive)}>
             <div className={styles.text}>{skillName}</div>
         </div>
     );
