@@ -6,7 +6,7 @@ import * as styles from './LanguageSwitcher.module.css';
 const LanuageSwitcher: React.FC = () => {
     return (
         <div className={styles.switcher}>
-            <img src={GermanFlag} />
+            <img loading='lazy' alt='Language_Switcher' src={GermanFlag} />
         </div>
     );
 };

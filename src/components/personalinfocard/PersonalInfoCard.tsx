@@ -8,7 +8,7 @@ const PersonalInfoCard: React.FC = () => {
         <div className={styles.infocard}>
             <div className={styles.gridWrapper}>
                 <div className={`${styles.profilePic} ${styles.leftColumn}`}>
-                    <img className={styles.img} src={ProfilePic} />
+                    <img loading='lazy' alt='Profil_Bild' className={styles.img} src={ProfilePic} />
                 </div>
                 <div className={styles.rightColum}>
                     <p className={styles.titleText}>Hey!</p>
