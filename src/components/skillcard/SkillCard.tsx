@@ -4,13 +4,14 @@ import * as styles from './SkillCard.module.css';
 
 type SkillCardProps = {
     skillName: string;
+    acitve: boolean;
+    onClick: () => void;
 };
 
-const SkillCard: React.FC<SkillCardProps> = ({ skillName }) => {
-    const [aktive, setAktive] = useState(false);
+const SkillCard: React.FC<SkillCardProps> = ({ skillName, acitve, onClick }) => {
 
     return (
-        <div className={`${styles.skillcard} ${aktive ? styles.skillcardAktive : styles.skillcardUnaktive}`} onClick={() => setAktive(!aktive)}>
+        <div className={`${styles.skillcard} ${acitve ? styles.skillcardAktive : styles.skillcardUnaktive}`} onClick={onClick}>
             <div className={styles.text}>{skillName}</div>
         </div>
     );

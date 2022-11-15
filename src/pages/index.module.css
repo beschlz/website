@@ -6,6 +6,7 @@
     --left-page-margin: 60px;
     --name-font-size: 40px;
     --header-font-size: 32px;
+    --right-page-margin: 60px;
     color: var(--font-color);
     background-color: var(--main-color);
     margin: 0px;
@@ -89,6 +90,7 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-right: var(--right-page-margin);
 }
 
 @media only screen and (max-width: 1250px){

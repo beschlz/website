@@ -6,6 +6,7 @@ import IntroArea from "../components/introarea/IntroArea";
 import PersonalInfoCard from "../components/personalinfocard/PersonalInfoCard";
 import Station from "../components/station/Station";
 import SkillCard from "../components/skillcard/SkillCard";
+import SkillDetailsArea from "../components/skilldetailsarea/SkillDetailsArea";
 
 const mockedStations = [{
   year: '2022',
@@ -73,6 +74,13 @@ const mockedSkills = [
 
 
 const IndexPage: React.FC<PageProps> = () => {
+  const [selectedSkill, setSelectedSkill] = React.useState(mockedSkills[0].name);
+
+  const handleSelectedSkillChagen = (newSkill: string) => {
+    setSelectedSkill(newSkill);
+  };
+
+
   return (
     <main>
       <NavBar />
@@ -94,7 +102,12 @@ const IndexPage: React.FC<PageProps> = () => {
         <h2>Skills</h2>
         <div className={styles.skillcontainer}>
           {
-            mockedSkills.map(skill => <SkillCard skillName={skill.name} key={`key_skillcard_${skill.name}`} />)
+            mockedSkills.map(skill =>
+              <SkillCard
+                acitve={skill.name === selectedSkill}
+                skillName={skill.name}
+                key={`key_skillcard_${skill.name}`}
+                onClick={() => handleSelectedSkillChagen(skill.name)} />)
           }
         </div>
       </section>
