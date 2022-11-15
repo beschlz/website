@@ -1,0 +1,1 @@
+FROM ghcr.io/beschlz/website:main
