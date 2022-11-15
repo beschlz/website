@@ -94,6 +94,10 @@ p {
 }
 
 @media only screen and (max-width: 1250px){
+    .introsection {
+        margin-top: 80px;
+    }
+
     .card {
         display: flex;
         align-items: flex-end;
