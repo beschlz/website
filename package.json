@@ -1,31 +1,22 @@
 {
-  "name": "lebenslauf",
-  "version": "1.0.0",
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
   "private": true,
-  "description": "lebenslauf",
-  "author": "Bendt Schulz",
-  "keywords": [
-    "gatsby"
-  ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "gatsby": "^5.0.0",
-    "gatsby-plugin-manifest": "^5.0.0",
+    "@astrojs/react": "^1.2.2",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "astro": "^1.6.8",
     "hamburger-react": "^2.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^18.11.9",
-    "@types/react": "^18.0.25",
-    "@types/react-dom": "^18.0.8",
-    "typescript": "^4.8.4"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
