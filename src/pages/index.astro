@@ -1,72 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import NavBar from "../components/navbar/NavBar";
-import IntroArea from "../components/introarea/IntroArea";
-import Station from "../components/station/Station";
 import PersonalInfoCard from "../components/personalinfocard/PersonalInfoCard";
-import SkillCard from "../components/skillcard/SkillCard";
 import SkillArea from "../components/skillsarea/SkillArea";
-
-const mockedStations = [
-	{
-		year: "2022",
-		text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-
-  Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua`,
-	},
-	{
-		year: "2021",
-		text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-
-  Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua`,
-	},
-	{
-		year: "2020",
-		text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-
-  Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua`,
-	},
-];
-
-const mockedSkills = [
-	{
-		name: "Programmier-\nsprachen",
-		values: [{ name: "Java", level: 0.8 }],
-	},
-	{
-		name: "Backend",
-		values: [{ name: "Java", level: 0.8 }],
-	},
-	{
-		name: "Web & Mobile",
-		values: [{ name: "Java", level: 0.8 }],
-	},
-	{
-		name: "DevOps",
-		values: [
-			{ name: "Docker", level: 0.8 },
-			{ name: "Kubernetes", level: 0.7 },
-		],
-	},
-	{
-		name: `Projekt- &
-    \n Anforderungs-
-    \n mgmt`,
-		values: [{ name: "Java", level: 0.8 }],
-	},
-];
+import StationsArea from "../components/stationsarea/StationsArea";
+import IntroArea from "../components/introarea/IntroArea";
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<NavBar />
+		<NavBar client:load />
 		<section class="introsection">
 			<IntroArea />
 			<div class="card">
@@ -77,16 +20,12 @@ const mockedSkills = [
 		</section>
 		<section class="stationenSection">
 			<h2>Stationen</h2>
-			{
-				mockedStations.map((stat) => (
-					<Station year={stat.year} text={stat.text} />
-				))
-			}
+			<StationsArea />
 		</section>
 		<section class="skillSection">
 			<h2>Skills</h2>
 			<div class="skillcontainer">
-				<SkillArea client:load skills={mockedSkills} />
+				<SkillArea client:load />
 			</div>
 		</section>
 	</main>

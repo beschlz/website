@@ -1,8 +1,7 @@
-import React from "react";
-import Hamburger from 'hamburger-react'
+import Hamburger from "../hamburger/Hamburger";
 import LanuageSwitcher from "../languageswitcher/LanguageSwitcher";
 
-import * as styles from './NavBar.module.css';
+import styles from './NavBar.module.css';
 
 const NavBar: React.FC = () => {
     return (
