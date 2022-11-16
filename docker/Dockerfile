@@ -4,5 +4,5 @@ WORKDIR /app
 RUN yarn && yarn build
 
 FROM nginx:alpine
-COPY --from=builder app/public /usr/share/nginx/html
+COPY --from=builder app/dist /usr/share/nginx/html
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
