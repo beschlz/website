@@ -14,7 +14,7 @@ type IndividualSkill = {
 
 const mockedSkills = [
     {
-        name: "Programmiersprachen",
+        name: "Programmier-\nsprachen",
         values: [{ name: "Java", level: 0.8 }],
     },
     {
