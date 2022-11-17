@@ -1,6 +1,6 @@
-import React, { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 
-import * as styles from './SkillCard.module.css';
+import styles from './SkillCard.module.css';
 
 type SkillCardProps = {
     skillName: string;

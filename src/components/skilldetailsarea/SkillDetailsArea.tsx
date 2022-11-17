@@ -1,6 +1,4 @@
-import React from 'react';
-
-import * as styles from './SkillDetailsArea.module.css';
+import styles from './SkillDetailsArea.module.css';
 
 const SkillDetailsArea: React.FC = () => {
     return (
