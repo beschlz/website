@@ -21,7 +21,10 @@
 
 
 .text {
-    margin-left: 23px;
-    margin-top: 13px;
+    padding-left: 23px;
+    padding-top: 13px;
+    overflow-wrap: break-word;
     font-family: 'FragmentMono';
+    word-wrap: break-word;
+    white-space: initial;
 }

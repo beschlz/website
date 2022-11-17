@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SkillCard from "../skillcard/SkillCard";
+import styles from './SkillArea.module.css';
 
 type Skill = {
     name: string;
@@ -13,7 +14,7 @@ type IndividualSkill = {
 
 const mockedSkills = [
     {
-        name: "Programmier-\nsprachen",
+        name: "Programmiersprachen",
         values: [{ name: "Java", level: 0.8 }],
     },
     {
@@ -32,9 +33,7 @@ const mockedSkills = [
         ],
     },
     {
-        name: `Projekt- &
-    \n Anforderungs-
-    \n mgmt`,
+        name: "Projekt- & Anforderungsmgmt",
         values: [{ name: "Java", level: 0.8 }],
     },
 ];
@@ -50,17 +49,22 @@ const SkillArea: React.FC = () => {
 
     return (
         <>
-            {
-                mockedSkills.map((skill) =>
-                    <SkillCard
-                        key={`key_skill_card_${skill.name}`}
-                        acitve={skill.name === selectedSkill}
-                        skillName={skill.name}
-                        onClick={() =>
-                            handleSelectedSkillChagen(skill.name)
-                        }
-                    />)
-            }
+
+            <div className={styles.scrollingWrapper}>
+                {
+                    mockedSkills.map((skill) =>
+                        <SkillCard
+                            key={`key_skill_card_${skill.name}`}
+                            acitve={skill.name === selectedSkill}
+                            skillName={skill.name}
+                            onClick={() =>
+                                handleSelectedSkillChagen(skill.name)
+                            }
+                        />)
+                }
+            </div>
+
+
         </>
     );
 };

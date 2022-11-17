@@ -1,0 +1,14 @@
+.scrollingWrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-right: var(--right-page-margin);
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.card {
+    display: inline;
+}
