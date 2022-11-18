@@ -37,4 +37,5 @@
 .skillRow {
     display: flex;
     justify-content: flex-end;
+    padding-left: 32px;
 }
