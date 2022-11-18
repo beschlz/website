@@ -8,6 +8,10 @@
     margin-bottom: 32px;
 }
 
+.skillSelector:not(:last-child) {
+    margin-right: 32px;
+}
+
 .skillSelectorUnaktive {
     background: rgba(0, 0, 0, 0.5);
     color: #FFFFFF;
