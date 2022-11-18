@@ -17,4 +17,15 @@
     font-family: 'FragmentMono';  
 }
 
+@media (width <= 600px) {
+    .card {
+        margin: 4px;
+    }
+
+    .text {
+        font-size: 12px;
+        margin-right: 32px;
+    }   
+}
+
 
