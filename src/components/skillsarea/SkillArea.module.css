@@ -14,3 +14,27 @@
 .card {
     display: inline;
 }
+
+.headerRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillLevelsContainer {
+    border-radius: 24px;
+    padding: 32px;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-right: var(--right-page-margin);
+    background: var(--translucent-main-color);
+    min-height: 400px;
+}
+
+.skillRow {
+    display: flex;
+    justify-content: flex-end;
+}

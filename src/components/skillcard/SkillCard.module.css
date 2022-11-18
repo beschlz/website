@@ -1,0 +1,20 @@
+.card {
+    height: fit-content;
+    background: var(--secondary-color);
+    border-radius: 12px;
+    max-width: 184px;
+    margin: 8px;
+}
+
+.text {
+    display: inline;
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+    max-width: 120px;
+    margin-right: 64px;
+    padding-left: 23px;
+    font-family: 'FragmentMono';  
+}
+
+

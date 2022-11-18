@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SkillCard from "../skillcard/SkillCard";
 import SkillSelector from "../skillselector/SkillSelector";
 import styles from './SkillArea.module.css';
 
@@ -15,7 +16,11 @@ type IndividualSkill = {
 const mockedSkills = [
     {
         name: "Programmier-\nsprachen",
-        values: [{ name: "Java", level: 0.8 }],
+        values: [{ name: "Java", level: 0.2 },
+        { name: "Go", level: 0.9 },
+        { name: "Python", level: 0.5 },
+        { name: "JavaScript/ TypeScript", level: 0.4 }
+        ]
     },
     {
         name: "Backend",
@@ -30,6 +35,10 @@ const mockedSkills = [
         values: [
             { name: "Docker", level: 0.8 },
             { name: "Kubernetes", level: 0.7 },
+            { name: "Helm", level: 0.5 },
+            { name: "CI/CD", level: 0.3 },
+            { name: "Skaffold", level: 0.9 },
+            { name: "Google Cloud", level: 0.2 },
         ],
     },
     {
@@ -62,6 +71,23 @@ const SkillArea: React.FC = () => {
                             }
                         />)
                 }
+            </div>
+            <div className={styles.skillLevelsContainer}>
+                <div className={styles.headerRow}>
+                    <p>Beginner</p>
+                    <p>Proficient</p>
+                    <p>Advanced</p>
+                </div>
+                {
+                    mockedSkills.find(s => s.name === selectedSkill)?.values.map(
+                        (skill) =>
+
+                            <div className={styles.skillRow} style={{ width: `${skill.level * 100}%` }}>
+                                <SkillCard skillName={skill.name} />
+                            </div>
+                    )
+                }
+
             </div>
 
 
