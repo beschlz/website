@@ -9,6 +9,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     width: auto;
+    padding-left: var(--left-page-margin);
 }
 
 .card {
@@ -33,6 +34,7 @@
     margin-right: var(--right-page-margin);
     background: var(--translucent-main-color);
     min-height: 400px;
+    margin-left: var(--left-page-margin);
 }
 
 .skillRow {

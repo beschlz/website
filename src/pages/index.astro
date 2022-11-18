@@ -23,8 +23,14 @@ import IntroArea from "../components/IntroArea.astro";
 			<StationsArea />
 		</section>
 		<section class="skillSection">
-			<h2>Skills</h2>
+			<h2 class="leftPageMargin">Skills</h2>
 			<SkillArea client:load />
 		</section>
 	</main>
 </Layout>
+
+<style>
+	.leftPageMargin {
+		margin-left: var(--left-page-margin);
+	}
+</style>
