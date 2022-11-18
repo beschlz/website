@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SkillCard from "../skillcard/SkillCard";
+import SkillSelector from "../skillselector/SkillSelector";
 import styles from './SkillArea.module.css';
 
 type Skill = {
@@ -53,7 +53,7 @@ const SkillArea: React.FC = () => {
             <div className={styles.scrollingWrapper}>
                 {
                     mockedSkills.map((skill) =>
-                        <SkillCard
+                        <SkillSelector
                             key={`key_skill_card_${skill.name}`}
                             acitve={skill.name === selectedSkill}
                             skillName={skill.name}
