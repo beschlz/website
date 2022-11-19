@@ -18,6 +18,11 @@ li {
     margin-right: 32px;
 }
 
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .flag {
     display: inline;
     float: inline-end;

@@ -11,9 +11,9 @@ type SkillSelectorProps = {
 const SkillSelector: React.FC<SkillSelectorProps> = ({ skillName, acitve, onClick }) => {
 
     return (
-        <div className={`${styles.skillSelector} ${acitve ? styles.skillSelectorAktive : styles.skillSelectorUnaktive}`} onClick={onClick}>
+        <button className={`${styles.skillSelector} ${acitve ? styles.skillSelectorAktive : styles.skillSelectorUnaktive}`} onClick={onClick}>
             <div className={styles.text}>{skillName}</div>
-        </div>
+        </button>
     );
 };
 

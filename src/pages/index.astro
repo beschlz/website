@@ -10,7 +10,7 @@ import IntroArea from "../components/IntroArea.astro";
 <Layout title="bschulz.dev">
 	<main>
 		<NavBar />
-		<section class="introsection">
+		<section id="aboutme" class="introsection">
 			<IntroArea />
 			<div class="card">
 				<div class="subcard">
@@ -18,11 +18,11 @@ import IntroArea from "../components/IntroArea.astro";
 				</div>
 			</div>
 		</section>
-		<section class="stationenSection">
+		<section id="stations" class="stationenSection">
 			<h2>Stationen</h2>
 			<StationsArea />
 		</section>
-		<section class="skillSection">
+		<section id="skills" class="skillSection">
 			<h2 class="leftPageMargin">Skills</h2>
 			<SkillArea client:load />
 		</section>

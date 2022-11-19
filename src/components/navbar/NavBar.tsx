@@ -3,25 +3,25 @@ import styles from './NavBar.module.css';
 
 const NavBar: React.FC = () => {
     return (
-        <div className={styles.navbar}>
+        <nav className={styles.navbar}>
             <div className={styles.enableWhenSmall}>
                 <Hamburger />
             </div>
             <ul className={styles.disableWhenSmall}>
                 <li>
-                    Über mich
-                </li>
-                <li >
-                    Stationen
+                    <a href="#aboutme">Über mich</a>
                 </li>
                 <li>
-                    Skills
+                    <a href="#stations">Stationen</a>
                 </li>
                 <li>
-                    Impressum
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="/impressum">Impressum</a>
                 </li>
             </ul>
-        </div >
+        </nav >
     );
 };
 
