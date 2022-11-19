@@ -82,7 +82,7 @@ const SkillArea: React.FC = () => {
                     mockedSkills.find(s => s.name === selectedSkill)?.values.map(
                         (skill) =>
 
-                            <div className={styles.skillRow} style={{ width: `${100 - skill.level * 100}%` }}>
+                            <div className={styles.skillRow} style={{ minWidth: `${100 - (skill.level * 100)}%` }}>
                                 <SkillCard skillName={skill.name} />
                             </div>
                     )
