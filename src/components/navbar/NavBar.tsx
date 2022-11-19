@@ -1,6 +1,4 @@
 import Hamburger from "../hamburger/Hamburger";
-import LanuageSwitcher from "../languageswitcher/LanguageSwitcher";
-
 import styles from './NavBar.module.css';
 
 const NavBar: React.FC = () => {
