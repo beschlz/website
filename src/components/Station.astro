@@ -1,5 +1,5 @@
 ---
-const { text, year } = Astro.props;
+const { year, points } = Astro.props;
 ---
 
 <div class="station">
@@ -9,7 +9,7 @@ const { text, year } = Astro.props;
     </div>
     <div class="textContainer">
         <p class="title">{year}</p>
-        <p>{text}</p>
+        {points?.map((point: string) => <p>{point}</p>)}
     </div>
 </div>
 
@@ -32,7 +32,7 @@ const { text, year } = Astro.props;
         width: 36px;
         min-width: 36px;
         height: 36px;
-        max-height: 36px;
+        min-height: 36px;
         background-color: var(--secondary-color);
         border-radius: 50%;
         display: inline-block;

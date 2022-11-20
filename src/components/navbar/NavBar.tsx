@@ -17,9 +17,6 @@ const NavBar: React.FC = () => {
                 <li>
                     <a href="#skills">Skills</a>
                 </li>
-                <li>
-                    <a href="/impressum">Impressum</a>
-                </li>
             </ul>
         </nav >
     );

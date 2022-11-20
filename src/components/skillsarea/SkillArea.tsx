@@ -13,43 +13,59 @@ type IndividualSkill = {
     level: number;
 }
 
-const mockedSkills = [
+const skills = [
     {
         name: "Programmier-\nsprachen",
-        values: [{ name: "Java", level: 0.2 },
-        { name: "Go", level: 0.9 },
-        { name: "Python", level: 0.5 },
-        { name: "JavaScript/ TypeScript", level: 0.4 }
+        values: [{ name: "Java", level: 0.9 },
+        { name: "Go", level: 0.7 },
+        { name: "Python", level: 0.6 },
+        { name: "JavaScript/ TypeScript", level: 0.8 },
+        { name: "SQL", level: 0.8 },
         ]
     },
     {
         name: "Backend",
-        values: [{ name: "Java", level: 0.8 }],
+        values: [
+            { name: "NoSQL", level: 0.4 },
+            { name: "Spring", level: 0.8 },
+            { name: "REST API", level: 0.75 },
+            { name: "Hibernate", level: 0.84 },
+            { name: "Postgres", level: 0.9 },
+            { name: "Identity & Access Mgmt", level: 0.5 }
+        ],
     },
     {
         name: "Web & Mobile",
-        values: [{ name: "Java", level: 0.8 }],
+        values: [
+            { name: "React", level: 0.8 },
+            { name: "React Native", level: 0.65 },
+            { name: "HTML/CSS", level: 0.7 }],
     },
     {
         name: "DevOps",
         values: [
             { name: "Docker", level: 0.8 },
             { name: "Kubernetes", level: 0.7 },
-            { name: "Helm", level: 0.5 },
-            { name: "CI/CD", level: 0.3 },
-            { name: "Skaffold", level: 0.9 },
-            { name: "Google Cloud", level: 0.2 },
+            { name: "Helm", level: 0.7 },
+            { name: "CI/CD", level: 0.8 },
+            { name: "Google Cloud", level: 0.4 },
         ],
     },
     {
         name: "Projekt- & Anforderungsmgmt",
-        values: [{ name: "Java", level: 0.8 }],
+        values: [
+            { name: "Kanban", level: 0.8 },
+            { name: "UML", level: 0.6 },
+            { name: "Scrum", level: 0.7 },
+            { name: "Interviewing", level: 0.65 },
+            { name: "Prozess-modellierung (EPK, BPMN)", level: 0.5 }
+        ],
     },
 ];
 
 
 const SkillArea: React.FC = () => {
-    const [selectedSkill, setSelectedSkill] = useState(mockedSkills[0].name);
+    const [selectedSkill, setSelectedSkill] = useState(skills[0].name);
 
     const handleSelectedSkillChagen = (newSkill: string) => {
         setSelectedSkill(newSkill);
@@ -61,7 +77,7 @@ const SkillArea: React.FC = () => {
 
             <div className={styles.scrollingWrapper}>
                 {
-                    mockedSkills.map((skill) =>
+                    skills.map((skill) =>
                         <SkillSelector
                             key={`key_skill_card_${skill.name}`}
                             acitve={skill.name === selectedSkill}
@@ -79,7 +95,7 @@ const SkillArea: React.FC = () => {
                     <p>Advanced</p>
                 </div>
                 {
-                    mockedSkills.find(s => s.name === selectedSkill)?.values.map(
+                    skills.find(s => s.name === selectedSkill)?.values.map(
                         (skill) =>
 
                             <div key={`key_skillrow_${skill.name}_${skill.level}`} className={styles.skillRow} style={{ minWidth: `${100 - (skill.level * 100)}%` }}>
