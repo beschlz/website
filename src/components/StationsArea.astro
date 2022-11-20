@@ -25,21 +25,37 @@ const stations = [
             `Projekt zur Bedarfs- und Anforderunsanalyse eines DWHs, inklusive Gestaltung eines neuen unternehmensübergreifenden 
         Repotings für einen kommunalen Versicherer.`,
         ],
-    },
-    {
-        year: "2020 - Festanstellung PPI AG",
+        events: [
+            {
+                type: "education",
+                text: "B. Sc. Wirtschaftsinformatik",
+            },
+            {
+                type: "job",
+                text: "IT-Consultant, PPI AG",
+            },
+        ],
     },
     {
         year: "2016 - 2019",
         points: [
             `Einsatz als Student in verschiedenen Projekten. Fokus auf die Ausbildung in der Softwareentwicklung.`,
         ],
+        events: [
+            {
+                type: "job",
+                text: "Dualer Student, PPI AG",
+            },
+        ],
     },
     {
-        year: "2016 - Beginn duales Studium der Wirtschaftsinformatik bei der PPI AG",
-    },
-    {
-        year: "2016 - Abitur",
+        year: "2016",
+        events: [
+            {
+                type: "education",
+                text: "Abitur",
+            },
+        ],
     },
 ];
 ---
@@ -51,6 +67,7 @@ const stations = [
                 key={`key_staion_${stat.year}`}
                 year={stat.year}
                 points={stat.points}
+                events={stat.events}
             />
         ))
     }

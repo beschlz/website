@@ -1,5 +1,11 @@
 ---
-const { year, points } = Astro.props;
+import EventCard from "./EventCard/EventCard";
+
+const { year, points, events } = Astro.props;
+type Event = {
+    type: "education" | "job";
+    text: string;
+};
 ---
 
 <div class="station">
@@ -10,6 +16,7 @@ const { year, points } = Astro.props;
     <div class="textContainer">
         <p class="title">{year}</p>
         {points?.map((point: string) => <p>{point}</p>)}
+        {events?.map((e: Event) => <EventCard type={e.type} text={e.text} />)}
     </div>
 </div>
 
