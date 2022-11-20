@@ -16,7 +16,11 @@ type Event = {
     <div class="textContainer">
         <p class="title">{year}</p>
         {points?.map((point: string) => <p>{point}</p>)}
-        {events?.map((e: Event) => <EventCard type={e.type} text={e.text} />)}
+        {
+            events?.map((e: Event) => (
+                <EventCard client:load type={e.type} text={e.text} />
+            ))
+        }
     </div>
 </div>
 
