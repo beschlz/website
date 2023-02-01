@@ -10,6 +10,8 @@
     justify-content: space-between;
     width: auto;
     padding-left: var(--left-page-margin);
+    margin-bottom: 24px;
+    scrollbar-color: white var(--main-color);
 }
 
 .card {
