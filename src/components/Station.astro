@@ -1,70 +1,70 @@
 ---
-import EventCard from "./EventCard/EventCard";
+import EventCard from "./EventCard";
 
 const { year, points, events } = Astro.props;
 type Event = {
-    type: "education" | "job";
-    text: string;
+  type: "education" | "job";
+  text: string;
 };
 ---
 
 <div class="station">
-    <div class="cirlceAndLine">
-        <span class="circle"></span>
-        <div class="line"></div>
-    </div>
-    <div class="textContainer">
-        <p class="title">{year}</p>
-        {points?.map((point: string) => <p>{point}</p>)}
-        {events?.map((e: Event) => <EventCard type={e.type} text={e.text} />)}
-    </div>
+  <div class="cirlceAndLine">
+    <span class="circle"></span>
+    <div class="line"></div>
+  </div>
+  <div class="textContainer">
+    <p class="title">{year}</p>
+    {points?.map((point: string) => <p>{point}</p>)}
+    {events?.map((e: Event) => <EventCard type={e.type} text={e.text} />)}
+  </div>
 </div>
 
 <style>
-    .station {
-        margin-bottom: 16px;
-        display: grid;
-        grid-template-columns: 10% 70%;
-    }
+  .station {
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 10% 70%;
+  }
 
-    .cirlceAndLine {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        margin-left: 4px;
-    }
+  .cirlceAndLine {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 4px;
+  }
 
-    .circle {
-        width: 36px;
-        min-width: 36px;
-        height: 36px;
-        min-height: 36px;
-        background-color: var(--secondary-color);
-        border-radius: 50%;
-        display: inline-block;
-        margin-bottom: 16px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+  .circle {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    min-height: 36px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 
-    .line {
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        height: 80%;
-        border-radius: 140px;
-        margin-left: 17px;
-    }
+  .line {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 80%;
+    border-radius: 140px;
+    margin-left: 17px;
+  }
 
-    .textContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        margin-left: 12px;
-        padding-top: 8px;
-    }
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 12px;
+    padding-top: 8px;
+  }
 
-    .title {
-        font-weight: bold;
-        margin-top: 0px;
-    }
+  .title {
+    font-weight: bold;
+    margin-top: 0px;
+  }
 </style>

@@ -1,5 +1,3 @@
-import { useCallback, useState } from 'react';
-
 import styles from './SkillSelector.module.css';
 
 type SkillSelectorProps = {

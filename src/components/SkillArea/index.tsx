@@ -1,17 +1,7 @@
 import { useState } from "react";
-import SkillCard from "../skillcard/SkillCard";
-import SkillSelector from "../skillselector/SkillSelector";
+import SkillCard from "./SkillCard";
+import SkillSelector from "./SkillSelector";
 import styles from './SkillArea.module.css';
-
-type Skill = {
-    name: string;
-    values: IndividualSkill[];
-}
-
-type IndividualSkill = {
-    name: string;
-    level: number;
-}
 
 const skills = [
     {

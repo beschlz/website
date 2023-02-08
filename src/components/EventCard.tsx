@@ -1,6 +1,6 @@
 import styles from "./EventCard.module.css";
-import hat from '../../images/hat.svg';
-import wrench from '../../images/wrench.svg';
+import hat from '../images/hat.svg';
+import wrench from '../images/wrench.svg';
 
 
 type EventCardProps = {

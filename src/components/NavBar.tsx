@@ -1,4 +1,4 @@
-import Hamburger from "../hamburger/Hamburger";
+import Hamburger from "./Hamburger";
 import styles from './NavBar.module.css';
 
 const NavBar: React.FC = () => {
@@ -16,6 +16,9 @@ const NavBar: React.FC = () => {
                 </li>
                 <li>
                     <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="/blog">Blog</a>
                 </li>
             </ul>
         </nav >
