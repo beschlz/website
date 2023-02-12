@@ -8,6 +8,9 @@ module.exports = {
 			translucentMain: "rgba(0, 0, 0, 0.49)",
 			secondaryColor: "#b03800",
 			translucentWhite: "rgba(255, 255, 255, 0.3)"
+		},
+		fontFamily: {
+			mono: ["FragmentMono"]
 		}
 	},
 	plugins: [],

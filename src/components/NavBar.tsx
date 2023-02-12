@@ -1,20 +1,14 @@
-import Hamburger from "./Hamburger";
-import styles from './NavBar.module.css';
-
 const NavBar: React.FC = () => {
     return (
-        <nav className={styles.navbar}>
-            <div className={styles.enableWhenSmall}>
-                <Hamburger />
-            </div>
-            <ul className={styles.disableWhenSmall}>
-                <li>
+        <nav className="mt-10 ml-8 sm:ml-14">
+            <ul className="list-none">
+                <li className="text-xl inline mr-8 font-mono">
                     <a href="#aboutme">Über mich</a>
                 </li>
-                <li>
+                <li className="text-xl inline mr-8 font-mono">
                     <a href="#stations">Stationen</a>
                 </li>
-                <li>
+                <li className="text-xl inline mr-8 font-mono">
                     <a href="#skills">Skills</a>
                 </li>
             </ul>
