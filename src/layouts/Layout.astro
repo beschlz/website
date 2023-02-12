@@ -1,6 +1,6 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,83 +8,83 @@ const { title } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	:root {
-		--main-color: #0e1d33;
-		--translucent-main-color: rgba(0, 0, 0, 0.49);
-		--secondary-color: #b03800;
-		--font-color: #ffffff;
-		--left-page-margin: 60px;
-		--name-font-size: 40px;
-		--header-font-size: 32px;
-		--right-page-margin: 60px;
-		color: var(--font-color);
-		background-color: var(--main-color);
-		margin: 0px;
-		scroll-behavior: smooth;
-	}
+  :root {
+    --main-color: #0e1d33;
+    --translucent-main-color: rgba(0, 0, 0, 0.49);
+    --secondary-color: #b03800;
+    --font-color: #ffffff;
+    --left-page-margin: 60px;
+    --name-font-size: 40px;
+    --header-font-size: 32px;
+    --right-page-margin: 60px;
+    color: var(--font-color);
+    background-color: var(--main-color);
+    margin: 0px;
+    scroll-behavior: smooth;
+  }
 
-	@media only screen and (max-width: 800px) {
-		:root {
-			--left-page-margin: 32px;
-			--name-font-size: 32px;
-			--header-font-size: 28px;
-			--right-page-margin: 32px;
-		}
+  @media only screen and (max-width: 800px) {
+    :root {
+      --left-page-margin: 32px;
+      --name-font-size: 32px;
+      --header-font-size: 28px;
+      --right-page-margin: 32px;
+    }
 
-		p {
-			font-size: 12px;
-		}
-	}
+    p {
+      font-size: 12px;
+    }
+  }
 
-	body {
-		width: 100%;
-		margin: 0px;
-		padding-bottom: 128px;
-	}
+  body {
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 128px;
+  }
 
-	h1 {
-		font-family: "FragmentMono", monospace;
-		font-size: 40px;
-		font-weight: 400;
-	}
+  h1 {
+    font-family: "FragmentMono", monospace;
+    font-size: 40px;
+    font-weight: 400;
+  }
 
-	h2 {
-		font-family: "FragmentMono", monospace;
-		font-size: 32px;
-		font-weight: 400;
-	}
+  h2 {
+    font-family: "FragmentMono", monospace;
+    font-size: 32px;
+    font-weight: 400;
+  }
 
-	p {
-		font-family: "FragmentMono", monospace;
-	}
+  p {
+    font-family: "FragmentMono", monospace;
+  }
 
-	@font-face {
-		font-family: "FragmentMono";
-		src: local("FragmentMono"),
-			url(../fonts/FragmentMono-Regular.ttf) format("truetype");
-	}
+  @font-face {
+    font-family: "FragmentMono";
+    src: local("FragmentMono"),
+      url(../fonts/FragmentMono-Regular.ttf) format("truetype");
+  }
 
-	@font-face {
-		font-family: "FragmentMono-Italic";
-		src: local("FragmentMono-Italic"),
-			url(../fonts/FragmentMono-Italic.ttf) format("truetype");
-	}
+  @font-face {
+    font-family: "FragmentMono-Italic";
+    src: local("FragmentMono-Italic"),
+      url(../fonts/FragmentMono-Italic.ttf) format("truetype");
+  }
 
-	@media only screen and (max-width: 1250px) {
-		h2 {
-			font-size: 24px;
-		}
-	}
+  @media only screen and (max-width: 1250px) {
+    h2 {
+      font-size: 24px;
+    }
+  }
 </style>
