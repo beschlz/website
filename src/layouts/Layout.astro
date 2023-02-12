@@ -18,6 +18,14 @@ const { title } = Astro.props;
   <body>
     <slot />
   </body>
+  <footer class="mt-20 float-right mr-4 w-full">
+    <div class="pl-16 pr-5 flex justify-center">
+      <hr class="w-full h-1 opacity-80" />
+    </div>
+    <div class="flex justify-end mt-5 mr-5 mb-8">
+      <a class="font-mono" href="/impressum">Impressum</a>
+    </div>
+  </footer>
 </html>
 <style is:global>
   :root {
