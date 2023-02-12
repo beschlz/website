@@ -1,0 +1,21 @@
+---
+import hat from "../images/hat.svg";
+import wrench from "../images/wrench.svg";
+
+interface Props {
+  type: "education" | "job";
+  text: string;
+}
+
+const { type, text } = Astro.props;
+---
+
+<div
+  class="bg-white rounded-xl inline-flex pr-3 justify-center items-center mb-4"
+>
+  <img
+    class="ml-2 h-[36px] w-[36px] mt-1 mb-1"
+    src={type === "education" ? hat : wrench}
+  />
+  <div class="inline ml-3 mr-3 text-black font-mono">{text}</div>
+</div>
