@@ -1,7 +1,6 @@
 import { useState } from "react";
-import SkillCard from "./SkillCard";
 import SkillSelector from "./SkillSelector";
-import styles from './SkillArea.module.css';
+import SkillCard from "../SkillCard";
 
 const skills = [
     {
@@ -42,7 +41,7 @@ const skills = [
         ],
     },
     {
-        name: "Projekt- & Anforderungsmgmt",
+        name: "Projekt-\n & Anforderungsmgmt",
         values: [
             { name: "Kanban", level: 0.8 },
             { name: "UML", level: 0.6 },
@@ -57,7 +56,7 @@ const skills = [
 const SkillArea: React.FC = () => {
     const [selectedSkill, setSelectedSkill] = useState(skills[0].name);
 
-    const handleSelectedSkillChagen = (newSkill: string) => {
+    const handleSelectedSkillChange = (newSkill: string) => {
         setSelectedSkill(newSkill);
     };
 
@@ -65,7 +64,7 @@ const SkillArea: React.FC = () => {
     return (
         <>
 
-            <div className={styles.scrollingWrapper}>
+            <div className="flex justify-between items-center ml-14 wrap">
                 {
                     skills.map((skill) =>
                         <SkillSelector
@@ -73,30 +72,27 @@ const SkillArea: React.FC = () => {
                             acitve={skill.name === selectedSkill}
                             skillName={skill.name}
                             onClick={() =>
-                                handleSelectedSkillChagen(skill.name)
+                                handleSelectedSkillChange(skill.name)
                             }
                         />)
                 }
             </div>
-            <div className={styles.skillLevelsContainer}>
-                <div className={styles.headerRow}>
+            <div className="rounded-xl p-8 flex w-auto flex-col items-end content-end mr-9 bg-translucentMain min-h-[400px] ml-12">
+                <div className="w-full flex justify-between">
                     <p>Beginner</p>
                     <p>Proficient</p>
                     <p>Advanced</p>
                 </div>
                 {
                     skills.find(s => s.name === selectedSkill)?.values.map(
-                        (skill) =>
+                        ({name, level}) =>
 
-                            <div key={`key_skillrow_${skill.name}_${skill.level}`} className={styles.skillRow} style={{ minWidth: `${100 - (skill.level * 100)}%` }}>
-                                <SkillCard skillName={skill.name} />
+                            <div key={`key_skillrow_${name}_${level}`} className="flex justify-start" style={{ minWidth: `${100 - (level * 100)}%` }}>
+                                <SkillCard skillName={name} />
                             </div>
                     )
                 }
-
             </div>
-
-
         </>
     );
 };
