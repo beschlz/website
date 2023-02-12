@@ -1,10 +1,10 @@
 import { useState } from "react";
 import SkillSelector from "./SkillSelector";
-import SkillCard from "../SkillCard";
+import SkillCard from "./SkillCard";
 
 const skills = [
     {
-        name: "Programmier-\nsprachen",
+        name: "Programmiersprachen",
         values: [{ name: "Java", level: 0.9 },
         { name: "Go", level: 0.7 },
         { name: "Python", level: 0.6 },
@@ -64,7 +64,7 @@ const SkillArea: React.FC = () => {
     return (
         <>
 
-            <div className="flex justify-between items-center ml-14 wrap">
+            <div className="flex justify-between items-center ml-12 mr-10 wrap overflow-x-scroll overflow-y-hidden mb-4">
                 {
                     skills.map((skill) =>
                         <SkillSelector
