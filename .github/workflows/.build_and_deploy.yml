@@ -52,7 +52,7 @@ jobs:
           node-version: 18.x
       
       - name: build app
-        run: yarn && yarn build
+        run: pnpm install && pnpm build
 
       - name: Upload to S3 and invalidate Cloudfront
         run: |
