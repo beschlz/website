@@ -3,7 +3,9 @@ export interface Props {
   title: string;
 }
 
-const { title } = Astro.props;
+const {
+  frontmatter: { title },
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -80,6 +82,18 @@ const { title } = Astro.props;
     width: 100%;
     margin: 0px;
     padding-bottom: 128px;
+  }
+
+  h1 {
+    font-family: "FragmentMono", monospace;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-family: "FragmentMono", monospace;
+    font-size: 32px;
+    font-weight: 400;
   }
 
   p {
