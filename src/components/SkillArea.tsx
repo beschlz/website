@@ -20,7 +20,9 @@ const skills = [
             { name: "REST API", level: 0.75 },
             { name: "Hibernate", level: 0.84 },
             { name: "Postgres", level: 0.9 },
-            { name: "Identity & Access Mgmt", level: 0.5 }
+            { name: "Identity & Access Mgmt", level: 0.5 },
+            { name: "Kafka", level: 0.3 },
+            { name: "Redis", level: 0.7 }
         ],
     },
     {
