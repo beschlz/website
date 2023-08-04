@@ -25,12 +25,10 @@ This project uses [astro](https://astro.build) and [react](https://reactjs.org)
 
 ``` sh
 /docker/Dockerfile # dockerfile
-railway.json # deployment config
 dist/ # output folder of astro
 nginx/ # configuration for nginx
 src/ # the src dir
 ```
-For deployment [railway.app](https://railway.app) is used. On every commit to main a github aciton is triggered, that builds a docker image, publishes it to githuba and triggers a new deployment to railway. Note that railway does not uses the just build image, but does build the same dockerfile with the new code itself.
 
-Since railway only supports hosting in US-West, using a CDN is on my todo list.
+This website is deployed in AWS using Terraform.
 
