@@ -5,10 +5,17 @@ In this repo you can find the source code for my website [bschulz.dev](https://b
 This source code is published under the MIT-License.
 
 ## Get up and running
-Just go
+Install [node](https://nodejs.org/) and [pnpm](https://pnpm.io/installation).
+
+Build the application with
+``` sh
+pnpm install
 ```
-yarn
-yarn dev
+
+And run the app with
+``` sh
+pnpm
+pnpm dev
 ```
 
 ## Tooling
