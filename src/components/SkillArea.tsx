@@ -39,7 +39,8 @@ const skills = [
             { name: "Kubernetes", level: 0.7 },
             { name: "Helm", level: 0.7 },
             { name: "CI/CD", level: 0.8 },
-            { name: "Google Cloud", level: 0.4 },
+            { name: "Google Cloud", level: 0.3 },
+            { name: "AWS", level: 0.5 },
         ],
     },
     {
