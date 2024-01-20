@@ -30,7 +30,11 @@ const skills = [
         values: [
             { name: "React", level: 0.8 },
             { name: "React Native", level: 0.65 },
-            { name: "HTML/CSS", level: 0.7 }],
+            { name: "HTML/CSS", level: 0.7 },
+            { name: "Tailwind", level: 0.7 },
+            { name: "Vite", level: 0.6 },
+            { name: "Astro", level: 0.6 },
+        ],
     },
     {
         name: "DevOps",
@@ -41,6 +45,7 @@ const skills = [
             { name: "CI/CD", level: 0.8 },
             { name: "Google Cloud", level: 0.3 },
             { name: "AWS", level: 0.5 },
+            { name: "Cloudflare", level: 0.5 },
         ],
     },
     {
@@ -72,7 +77,7 @@ const SkillArea: React.FC = () => {
                     skills.map((skill) =>
                         <SkillSelector
                             key={`key_skill_card_${skill.name}`}
-                            acitve={skill.name === selectedSkill}
+                            active={skill.name === selectedSkill}
                             skillName={skill.name}
                             onClick={() =>
                                 handleSelectedSkillChange(skill.name)
