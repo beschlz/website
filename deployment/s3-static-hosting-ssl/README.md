@@ -1,7 +1,5 @@
 Parts missing:
-    * acm Certificate
-    * Cloudfront setup
+_ acm Certificate
+_ Cloudfront setup
 
-
-Nice to have:
-    * automatic setup for namespace of domains in google domains
+Nice to have: \* automatic setup for namespace of domains in google domains

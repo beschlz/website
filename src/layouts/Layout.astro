@@ -6,7 +6,7 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -85,13 +85,15 @@ const { title } = Astro.props;
 
   @font-face {
     font-family: "FragmentMono";
-    src: local("FragmentMono"),
+    src:
+      local("FragmentMono"),
       url(../fonts/FragmentMono-Regular.ttf) format("truetype");
   }
 
   @font-face {
     font-family: "FragmentMono-Italic";
-    src: local("FragmentMono-Italic"),
+    src:
+      local("FragmentMono-Italic"),
       url(../fonts/FragmentMono-Italic.ttf) format("truetype");
   }
 </style>

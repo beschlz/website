@@ -3,90 +3,89 @@ import ProfilPic from "../images/Bild.jpg";
 ---
 
 <div class="infocard">
-    <div class="gridWrapper">
-        <div class="profilePic leftColumn">
-            <img loading="lazy" alt="Profil_Bild" class="img" src={ProfilPic} />
-        </div>
-        <div class="rightColum">
-            <p class="titleText">Hey!</p>
-            <p class="descriptionText">
-                Ich bin Bendt, Softwareentwickler, studierter
-                Wirtschaftsinformatiker und hobbymäßig Fotograf. Als
-                Fullstackentwickler bin ich in vielfältigen Softwareprojekten
-                unterwegs. Ob Web- oder Mobile Apps, Backend Services oder
-                DevOps.
-            </p>
-        </div>
+  <div class="gridWrapper">
+    <div class="profilePic leftColumn">
+      <img loading="lazy" alt="Profil_Bild" class="img" src={ProfilPic} />
     </div>
+    <div class="rightColum">
+      <p class="titleText">Hey!</p>
+      <p class="descriptionText">
+        Ich bin Bendt, Softwareentwickler, studierter Wirtschaftsinformatiker
+        und hobbymäßig Fotograf. Als Fullstackentwickler bin ich in vielfältigen
+        Softwareprojekten unterwegs. Ob Web- oder Mobile Apps, Backend Services
+        oder DevOps.
+      </p>
+    </div>
+  </div>
 </div>
 
 <style>
-    .infocard {
-        border-radius: 40px;
-        background-color: var(--translucent-main-color);
-        color: var(--translucent-main-color);
-        display: inline-block;
-        padding-left: 40px;
-        max-width: 720px;
-        padding-top: 24px;
-        padding-bottom: 32px;
-        margin-right: 16px;
-        padding-left: 0px;
-        align-self: flex-end;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+  .infocard {
+    border-radius: 40px;
+    background-color: var(--translucent-main-color);
+    color: var(--translucent-main-color);
+    display: inline-block;
+    padding-left: 40px;
+    max-width: 720px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    margin-right: 16px;
+    padding-left: 0px;
+    align-self: flex-end;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 
+  .gridWrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 35% 65%;
+    height: 100%;
+  }
+
+  .leftColumn {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rightColum {
+    font-family: "FragmentMono", monospace;
+    color: #ffffff;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 32px;
+    margin-top: 12px;
+    padding-right: 80px;
+  }
+
+  .titleText {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .descriptionText {
+    font-size: 16px;
+    word-break: normal;
+  }
+
+  .img {
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #151515;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 140px;
+    margin-left: 16px;
+  }
+
+  @media only screen and (max-width: 800px) {
     .gridWrapper {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 35% 65%;
-        height: 100%;
+      grid-template-columns: 100%;
+      height: fit-content;
     }
-
-    .leftColumn {
-        display: flex;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .rightColum {
-        font-family: "FragmentMono", monospace;
-        color: #ffffff;
-        flex-direction: column;
-        display: flex;
-        align-items: flex-start;
-        margin-left: 32px;
-        margin-top: 12px;
-        padding-right: 80px;
-    }
-
-    .titleText {
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-
-    .descriptionText {
-        font-size: 16px;
-        word-break: normal;
-    }
-
-    .img {
-        max-width: 100%;
-        max-height: 100%;
-        box-sizing: border-box;
-        border: 1px solid #151515;
-        width: 180px;
-        height: 180px;
-        object-fit: cover;
-        border-radius: 140px;
-        margin-left: 16px;
-    }
-
-    @media only screen and (max-width: 800px) {
-        .gridWrapper {
-            grid-template-columns: 100%;
-            height: fit-content;
-        }
-    }
+  }
 </style>
