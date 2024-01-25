@@ -1,11 +1,12 @@
 ---
+import { Image } from "astro:assets";
 import ProfilPic from "../images/Bild.jpg";
 ---
 
 <div class="infocard">
     <div class="gridWrapper">
         <div class="profilePic leftColumn">
-            <img loading="lazy" alt="Profil_Bild" class="img" src={ProfilPic} />
+            <Image loading="lazy" alt="Profil_Bild" class="img" src={ProfilPic} />
         </div>
         <div class="rightColum">
             <p class="titleText">Hey!</p>
