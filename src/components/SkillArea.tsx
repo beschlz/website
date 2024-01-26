@@ -3,70 +3,70 @@ import SkillSelector from "./SkillSelector";
 import SkillCard from "./SkillCard";
 
 const skills = [
-    {
-        name: "Programmiersprachen",
-        values: [{ name: "Java", level: 0.9 },
-        { name: "Go", level: 0.7 },
-        { name: "Python", level: 0.6 },
-        { name: "JavaScript/ TypeScript", level: 0.8 },
-        { name: "SQL", level: 0.8 },
-        ]
-    },
-    {
-        name: "Backend",
-        values: [
-            { name: "NoSQL", level: 0.4 },
-            { name: "Spring", level: 0.8 },
-            { name: "REST API", level: 0.75 },
-            { name: "Hibernate", level: 0.84 },
-            { name: "Postgres", level: 0.9 },
-            { name: "Identity & Access Mgmt", level: 0.5 },
-            { name: "Kafka", level: 0.3 },
-            { name: "Redis", level: 0.7 }
-        ],
-    },
-    {
-        name: "Web & Mobile",
-        values: [
-            { name: "React", level: 0.8 },
-            { name: "React Native", level: 0.65 },
-            { name: "HTML/CSS", level: 0.7 },
-            { name: "Tailwind", level: 0.7 },
-            { name: "Vite", level: 0.6 },
-            { name: "Astro", level: 0.6 },
-        ],
-    },
-    {
-        name: "DevOps",
-        values: [
-            { name: "Docker", level: 0.8 },
-            { name: "Kubernetes", level: 0.7 },
-            { name: "Helm", level: 0.7 },
-            { name: "CI/CD", level: 0.8 },
-            { name: "Google Cloud", level: 0.3 },
-            { name: "AWS", level: 0.5 },
-            { name: "Cloudflare", level: 0.5 },
-        ],
-    },
-    {
-        name: "Projekt-\n & Anforderungsmgmt",
-        values: [
-            { name: "Kanban", level: 0.8 },
-            { name: "UML", level: 0.6 },
-            { name: "Scrum", level: 0.7 },
-            { name: "Interviewing", level: 0.65 },
-            { name: "Prozess-modellierung (EPK, BPMN)", level: 0.5 }
-        ],
-    },
+  {
+    name: "Programmiersprachen",
+    values: [
+      { name: "Java", level: 0.9 },
+      { name: "Go", level: 0.7 },
+      { name: "Python", level: 0.6 },
+      { name: "JavaScript/ TypeScript", level: 0.8 },
+      { name: "SQL", level: 0.8 },
+    ],
+  },
+  {
+    name: "Backend",
+    values: [
+      { name: "NoSQL", level: 0.4 },
+      { name: "Spring", level: 0.8 },
+      { name: "REST API", level: 0.75 },
+      { name: "Hibernate", level: 0.84 },
+      { name: "Postgres", level: 0.9 },
+      { name: "Identity & Access Mgmt", level: 0.5 },
+      { name: "Kafka", level: 0.3 },
+      { name: "Redis", level: 0.7 },
+    ],
+  },
+  {
+    name: "Web & Mobile",
+    values: [
+      { name: "React", level: 0.8 },
+      { name: "React Native", level: 0.65 },
+      { name: "HTML/CSS", level: 0.7 },
+      { name: "Tailwind", level: 0.7 },
+      { name: "Vite", level: 0.6 },
+      { name: "Astro", level: 0.6 },
+    ],
+  },
+  {
+    name: "DevOps",
+    values: [
+      { name: "Docker", level: 0.8 },
+      { name: "Kubernetes", level: 0.7 },
+      { name: "Helm", level: 0.7 },
+      { name: "CI/CD", level: 0.8 },
+      { name: "Google Cloud", level: 0.3 },
+      { name: "AWS", level: 0.5 },
+      { name: "Cloudflare", level: 0.5 },
+    ],
+  },
+  {
+    name: "Projekt-\n & Anforderungsmgmt",
+    values: [
+      { name: "Kanban", level: 0.8 },
+      { name: "UML", level: 0.6 },
+      { name: "Scrum", level: 0.7 },
+      { name: "Interviewing", level: 0.65 },
+      { name: "Prozess-modellierung (EPK, BPMN)", level: 0.5 },
+    ],
+  },
 ];
 
-
 const SkillArea: React.FC = () => {
-    const [selectedSkill, setSelectedSkill] = useState(skills[0].name);
+  const [selectedSkill, setSelectedSkill] = useState(skills[0].name);
 
-    const handleSelectedSkillChange = (newSkill: string) => {
-        setSelectedSkill(newSkill);
-    };
+  const handleSelectedSkillChange = (newSkill: string) => {
+    setSelectedSkill(newSkill);
+  };
 
     return (
         <>
