@@ -2,7 +2,7 @@ name: Build, publish and deploy
 
 on:
   push:
-    branches: ['main']
+    branches: ["main"]
 
 env:
   REGISTRY: ghcr.io
@@ -50,7 +50,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
-      
+
       - name: Install pnpm
         run: npm install -g pnpm
 
@@ -64,4 +64,4 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          AWS_DEFAULT_REGION: 'eu-central-1'
+          AWS_DEFAULT_REGION: "eu-central-1"
