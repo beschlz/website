@@ -9,7 +9,10 @@ import NavBar from "../components/NavBar.astro";
 
 <Layout title="bschulz.dev">
   <main>
-    <section id="aboutme" class="mt-40 flex-wrap flex flex-row justify-between mr-0">
+    <section
+      id="aboutme"
+      class="mt-40 flex-wrap flex flex-row justify-between mr-0"
+    >
       <IntroArea />
       <div class="flex items-end content-end justify-end mt-10 ml-12 mr-12">
         <div class="flex items-end justify-end">
@@ -23,7 +26,7 @@ import NavBar from "../components/NavBar.astro";
     </section>
     <section id="skills" class="mt-32 ml-16">
       <h2 class="text-3xl font-mono mb-4">Skills</h2>
-        <SkillArea  client:load />
+      <SkillArea client:load />
     </section>
   </main>
 </Layout>

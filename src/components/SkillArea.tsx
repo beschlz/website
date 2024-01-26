@@ -68,40 +68,38 @@ const SkillArea: React.FC = () => {
     setSelectedSkill(newSkill);
   };
 
-    return (
-        <>
-
-            <div className="flex justify-between items-center mr-10 wrap overflow-x-scroll overflow-y-hidden mb-4">
-                {
-                    skills.map((skill) =>
-                        <SkillSelector
-                            key={`key_skill_card_${skill.name}`}
-                            active={skill.name === selectedSkill}
-                            skillName={skill.name}
-                            onClick={() =>
-                                handleSelectedSkillChange(skill.name)
-                            }
-                        />)
-                }
+  return (
+    <>
+      <div className="flex justify-between items-center mr-10 wrap overflow-x-scroll overflow-y-hidden mb-4">
+        {skills.map((skill) => (
+          <SkillSelector
+            key={`key_skill_card_${skill.name}`}
+            active={skill.name === selectedSkill}
+            skillName={skill.name}
+            onClick={() => handleSelectedSkillChange(skill.name)}
+          />
+        ))}
+      </div>
+      <div className="rounded-xl p-8 flex w-auto flex-col items-end content-end mr-9 bg-translucentMain min-h-[400px]">
+        <div className="w-full flex justify-between">
+          <p>Beginner</p>
+          <p>Proficient</p>
+          <p>Advanced</p>
+        </div>
+        {skills
+          .find((s) => s.name === selectedSkill)
+          ?.values.map(({ name, level }) => (
+            <div
+              key={`key_skillrow_${name}_${level}`}
+              className="flex justify-start"
+              style={{ minWidth: `${100 - level * 100}%` }}
+            >
+              <SkillCard skillName={name} />
             </div>
-            <div className="rounded-xl p-8 flex w-auto flex-col items-end content-end mr-9 bg-translucentMain min-h-[400px]">
-                <div className="w-full flex justify-between">
-                    <p>Beginner</p>
-                    <p>Proficient</p>
-                    <p>Advanced</p>
-                </div>
-                {
-                    skills.find(s => s.name === selectedSkill)?.values.map(
-                        ({name, level}) =>
-
-                            <div key={`key_skillrow_${name}_${level}`} className="flex justify-start" style={{ minWidth: `${100 - (level * 100)}%` }}>
-                                <SkillCard skillName={name} />
-                            </div>
-                    )
-                }
-            </div>
-        </>
-    );
+          ))}
+      </div>
+    </>
+  );
 };
 
 export default SkillArea;
