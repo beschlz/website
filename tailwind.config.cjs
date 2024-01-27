@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        my: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+      },
+    },
     colors: {
       mainColor: "#0e1d33",
       translucentMain: "rgba(0, 0, 0, 0.49)",

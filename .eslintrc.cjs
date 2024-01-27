@@ -79,12 +79,12 @@ module.exports = {
       },
       extends: ["eslint:recommended", "plugin:react/recommended", "prettier"],
       parser: "@typescript-eslint/parser",
-      "parserOptions": {
-        "ecmaVersion": 12,
-        "sourceType": "module",
-        "ecmaFeatures": {
-          "jsx": true
-        }
+      parserOptions: {
+        ecmaVersion: 12,
+        sourceType: "module",
+        ecmaFeatures: {
+          jsx: true,
+        },
       },
       plugins: ["react", "react-hooks", "prettier"],
       rules: {
@@ -96,7 +96,7 @@ module.exports = {
         "react-hooks/exhaustive-deps": "warn",
         "prettier/prettier": "warn",
       },
-    }
+    },
     // ...
   ],
-}
+};

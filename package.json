@@ -14,18 +14,18 @@
     "lint": "eslint --ext .js,.astro,.tsx,.jsx src"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.19.7",
-    "@astrojs/react": "^2.2.1",
-    "@astrojs/tailwind": "^4.0.0",
-    "@types/react": "^18.2.18",
-    "@types/react-dom": "^18.2.7",
-    "astro": "^2.10.1",
+    "@astrojs/mdx": "^2.1.0",
+    "@astrojs/react": "^3.0.9",
+    "@astrojs/tailwind": "^5.1.0",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "astro": "^4.2.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.1",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-astro": "^0.31.3",
@@ -35,6 +35,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.2.4",
     "prettier-plugin-astro": "^0.13.0",
-    "prettier@latest": "link:eslint-plugin-prettier/prettier@latest"
+    "prettier@latest": "link:eslint-plugin-prettier/prettier@latest",
+    "sharp": "^0.33.2"
   }
 }

@@ -9,81 +9,24 @@ import NavBar from "../components/NavBar.astro";
 
 <Layout title="bschulz.dev">
   <main>
-    <NavBar />
-    <section id="aboutme" class="introsection">
+    <section
+      id="aboutme"
+      class="mt-40 flex-wrap flex flex-row justify-between mr-0"
+    >
       <IntroArea />
-      <div class="card">
-        <div class="subcard">
+      <div class="flex items-end content-end justify-end mt-10 ml-12 mr-12">
+        <div class="flex items-end justify-end">
           <PersonalInfoCard />
         </div>
       </div>
     </section>
-    <section id="stations" class="stationenSection">
+    <section id="stations" class="flex flex-col max-w-[780px] mt-36 ml-16">
       <h2 class="text-3xl font-mono mb-4">Stationen</h2>
       <StationsArea />
     </section>
-    <section id="skills" class="skillSection">
-      <h2 class="text-3xl font-mono mb-4 leftPageMargin">Skills</h2>
+    <section id="skills" class="mt-32 ml-16">
+      <h2 class="text-3xl font-mono mb-4">Skills</h2>
       <SkillArea client:load />
     </section>
   </main>
 </Layout>
-
-<style>
-  .introsection {
-    margin-top: 160px;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 0px;
-  }
-
-  .stationenSection {
-    display: flex;
-    flex-direction: column;
-    max-width: 780px;
-    margin-top: 140px;
-    margin-left: var(--left-page-margin);
-  }
-
-  .skillSection {
-    margin-top: 120px;
-  }
-
-  .card {
-    display: flex;
-    align-items: flex-end;
-    align-content: flex-end;
-    justify-content: flex-end;
-  }
-
-  @media only screen and (max-width: 1250px) {
-    .introsection {
-      margin-top: 80px;
-    }
-
-    .card {
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-      margin-top: 32px;
-      width: 100%;
-    }
-
-    .subcard {
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-      width: 90%;
-    }
-
-    h2 {
-      font-size: 24px;
-    }
-  }
-
-  .leftPageMargin {
-    margin-left: var(--left-page-margin);
-  }
-</style>
