@@ -11,21 +11,21 @@ import NavBar from "../components/NavBar.astro";
   <main>
     <section
       id="aboutme"
-      class="mt-40 flex-wrap flex flex-row justify-between mr-0"
+      class="mr-0 mt-40 flex flex-row flex-wrap justify-between"
     >
       <IntroArea />
-      <div class="flex items-end content-end justify-end mt-10 ml-12 mr-12">
+      <div class="ml-12 mr-12 mt-10 flex content-end items-end justify-end">
         <div class="flex items-end justify-end">
           <PersonalInfoCard />
         </div>
       </div>
     </section>
-    <section id="stations" class="flex flex-col max-w-[780px] mt-36 ml-16">
-      <h2 class="text-3xl font-mono mb-4">Stationen</h2>
+    <section id="stations" class="ml-16 mt-36 flex max-w-[780px] flex-col">
+      <h2 class="mb-4 font-mono text-3xl">Stationen</h2>
       <StationsArea />
     </section>
-    <section id="skills" class="mt-32 ml-16">
-      <h2 class="text-3xl font-mono mb-4">Skills</h2>
+    <section id="skills" class="ml-16 mt-32">
+      <h2 class="mb-4 font-mono text-3xl">Skills</h2>
       <SkillArea client:load />
     </section>
   </main>
