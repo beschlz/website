@@ -35,6 +35,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.2.4",
     "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "prettier@latest": "link:eslint-plugin-prettier/prettier@latest",
     "sharp": "^0.33.2"
   }

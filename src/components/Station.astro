@@ -8,18 +8,18 @@ type Event = {
 };
 ---
 
-<div class="grid mb-4 grid-cols-8">
-  <div class="flex flex-col items-start ml-1">
+<div class="mb-4 grid grid-cols-8">
+  <div class="ml-1 flex flex-col items-start">
     <span
-      class="bg-secondaryColor shadow-md w-[36px] min-w-[36px] h-[36px] min-h-[36px] rounded-full inline-block mb-4"
+      class="mb-4 inline-block h-[36px] min-h-[36px] w-[36px] min-w-[36px] rounded-full bg-secondaryColor shadow-md"
     ></span>
     <div
-      class="h-[80%] rounded-full ml-[17px] border border-solid border-translucentWhite"
+      class="ml-[17px] h-[80%] rounded-full border border-solid border-translucentWhite"
     >
     </div>
   </div>
-  <div class="flex flex-col items-start mt-[5px] col-span-6">
-    <p class="font-bold mb-4">{year}</p>
+  <div class="col-span-6 mt-[5px] flex flex-col items-start">
+    <p class="mb-4 font-bold">{year}</p>
     {points?.map((point: string) => <p class="mb-4">{point}</p>)}
     {events?.map((e: Event) => <EventCard type={e.type} text={e.text} />)}
   </div>

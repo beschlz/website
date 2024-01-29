@@ -70,7 +70,7 @@ const SkillArea: React.FC = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center mr-10 wrap overflow-x-scroll overflow-y-hidden mb-4">
+      <div className="wrap mb-4 mr-10 flex items-center justify-between overflow-y-hidden overflow-x-scroll">
         {skills.map((skill) => (
           <SkillSelector
             key={`key_skill_card_${skill.name}`}
@@ -80,8 +80,8 @@ const SkillArea: React.FC = () => {
           />
         ))}
       </div>
-      <div className="rounded-xl p-8 flex w-auto flex-col items-end content-end mr-9 bg-translucentMain min-h-[400px]">
-        <div className="w-full flex justify-between">
+      <div className="mr-9 flex min-h-[400px] w-auto flex-col content-end items-end rounded-xl bg-translucentMain p-8">
+        <div className="flex w-full justify-between text-sm md:text-base">
           <p>Beginner</p>
           <p>Proficient</p>
           <p>Advanced</p>

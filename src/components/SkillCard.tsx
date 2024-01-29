@@ -4,8 +4,8 @@ interface Props {
 
 const SkillCard: React.FC<Props> = ({ skillName }) => {
   return (
-    <div className="h-fit bg-secondaryColor rounded-xl max-w-[184px] min-h-[40px] m-2 ">
-      <p className="inline-block w-fit h-fit max-w-[120px] mr-16 pl-6 font-mono mt-1">
+    <div className="m-2 h-fit min-h-[40px] max-w-[184px] rounded-xl bg-secondaryColor ">
+      <p className="mr-16 mt-1 inline-block h-fit w-fit max-w-[120px] pl-6 font-mono text-sm md:text-base">
         {skillName}
       </p>
     </div>
