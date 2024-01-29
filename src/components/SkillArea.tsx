@@ -81,7 +81,7 @@ const SkillArea: React.FC = () => {
         ))}
       </div>
       <div className="mr-9 flex min-h-[400px] w-auto flex-col content-end items-end rounded-xl bg-translucentMain p-8">
-        <div className="flex w-full justify-between">
+        <div className="flex w-full justify-between text-sm md:text-base">
           <p>Beginner</p>
           <p>Proficient</p>
           <p>Advanced</p>

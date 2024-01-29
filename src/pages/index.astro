@@ -14,17 +14,22 @@ import NavBar from "../components/NavBar.astro";
       class="mr-0 mt-40 flex flex-row flex-wrap justify-between"
     >
       <IntroArea />
-      <div class="ml-12 mr-12 mt-10 flex content-end items-end justify-end">
+      <div
+        class="ml-8 mr-12 mt-10 flex content-end items-end justify-end md:ml-12"
+      >
         <div class="flex items-end justify-end">
           <PersonalInfoCard />
         </div>
       </div>
     </section>
-    <section id="stations" class="ml-16 mt-36 flex max-w-[780px] flex-col">
+    <section
+      id="stations"
+      class="ml-8 mt-36 flex max-w-[780px] flex-col md:ml-12"
+    >
       <h2 class="mb-4 font-mono text-3xl">Stationen</h2>
       <StationsArea />
     </section>
-    <section id="skills" class="ml-16 mt-32">
+    <section id="skills" class="ml-8 mt-32 md:ml-12">
       <h2 class="mb-4 font-mono text-3xl">Skills</h2>
       <SkillArea client:load />
     </section>
